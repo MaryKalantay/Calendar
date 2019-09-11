@@ -1,13 +1,67 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  font-size: 14px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+textarea {
+  resize: vertical;
+  vertical-align: top;
+}
+
+@media only screen and (min-width: 1025px) {
+    a[href^="tel"], a[href^="skype"], a[href^="sms"] {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+:root {
+  /*font*/
+  --fz-md: 1rem;
+  --fz-sm: 0.8571rem;
+  --fz-xs: 0.705rem;
+
+  /*colors*/
+  --blue: #0271c7;
+  --d-blue: #015da4;
+  --white: white;
+  --d-gray: #999999;
+  --gray: #f4f4f4;
+
+  /*borders*/
+  --br: 5px;
+
+  /*shadows*/
+  --t-shadow: none;
+  --b-shadow: 0 4px 8px rgba(0,0,0,.15);
+
+  /*animate*/
+  --all-tr: all .3s ease-out;
+
+  /*container padding*/
+  --mp-md: 15%;
 }

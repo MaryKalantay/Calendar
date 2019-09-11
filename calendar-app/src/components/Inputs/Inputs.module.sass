@@ -1,0 +1,21 @@
+input,
+input[type="text"],
+input[type="date"],
+input[type="textarea"]
+  min-height: 1.7857rem
+  padding: .3rem .7143rem
+  border-radius: var(--br)
+  border: 1px solid var(--gray)
+  box-shadow: inset var(--b-shadow)
+  transition: var(--all-tr)
+  outline: none
+  &:focus
+    border: 1px solid var(--blue)
+
+input[type="submit"]
+  cursor: pointer
+  padding: .3rem .7143rem
+
+::placeholder
+  color: var(--black)
+  opacity: .3
